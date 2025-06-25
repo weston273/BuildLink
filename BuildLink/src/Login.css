@@ -1,0 +1,201 @@
+
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/loginBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 850px 800px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.loginContainer{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 30vh; */
+    /* background-color: black; */
+}
+
+.topContainer{ 
+    /* background-color: white; */
+    width: 500px;
+}
+
+.topContainer .navLinksContainer {
+    display: flex;
+    width : 110%;
+    /* background-color: red; */
+    justify-content: flex-end;
+    gap: 20px;
+    /* text-align: end; */
+}
+
+.topContainer .navLinksContainer .active{
+    color: #FEB300;
+    font-weight: bold;
+}
+
+.topContainer .navLinksContainer a{
+    text-decoration: none;
+    /* text-align: center ; */
+    font-size: 1.3em;
+    color :  #ffffff;
+    font-weight: bold;
+
+}
+
+.loginContainer .logoContainer img{
+    width: 10em;
+    height: 10em;
+    margin-top : -10%;
+    margin-bottom : -10%;
+    border-radius: 50%;
+}
+
+
+.loginForm {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.loginForm .topLoginForm {
+    margin-top: -9.0%;
+    align-items: left;
+}
+
+.loginForm #newAccountTitle {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -8.5%;
+    padding-bottom: 5%;
+}
+
+.loginForm .topLoginForm h3 {
+    font-weight: normal;
+}
+
+.loginForm #loginTitle {
+  position: relative;
+  display: inline-block;
+  color: #000; 
+}
+
+
+
+.loginForm #loginTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  height: 2px;
+  width: 120%; 
+  background: linear-gradient(to right, red, orange 50%);
+}
+
+.loginForm .inputContainer input[type="password"],
+.loginForm .inputContainer input[type="text"] { 
+    width : 94.5%;
+    padding : 10px;
+     border : 2px solid #f87171; 
+     border-radius: 5px; 
+     margin-bottom: 5px; 
+     font-size: 16px; 
+     font-weight: 500; 
+     outline: none; 
+    transition: all 0.3s ease; 
+
+}
+
+
+.buttonContainer{
+    margin-top : 10px;
+}
+#loginButton{
+  padding: 5px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out box-shadow 0.3s ease-in-out;
+}
+
+#loginButton:hover{
+  background: #f87171;
+  color: white;
+  transform: scale(1.1); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#loginButton:active{
+  background: #f11b1b;
+  color: white;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  margin: 10px 0;
+  width: 100%;
+}
+
+.divider hr {
+  flex: 1;
+  height: 1px;
+  background-color: black; 
+  border: none;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: black; 
+  font-size: 14px; 
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footerLinks img {
+    width : 15px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin : 10px 0;
+    font-size: small;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease box-shadow 0.3s ease transform 0.3s ease background-color 0.3s ease;;
+    background-color: transparent;
+}
+
+a:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #f87171;
+    background-color: transparent;
+}
+
+
+
+
